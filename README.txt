@@ -1,10 +1,21 @@
-Super Simple Post / Page Restrictor
-=========
+
+=== Super Simple Post / Page Restrictor ===
+Contributors: arippberger, werkpress
+Tags: restrict content, restrictor, super simple, user login, login, restrict
+Donate link: http://alecrippberger.com
+Requires at least: 3.0.1
+Tested up to: 3.9.1
+Stable tag: 1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Restict content on a post-by-post or page-by-page basis. Minimal configuration required.
+
+== Description ==
 
 SSPPR provides a **super simple** way to restrict specific post/pages/custom post types. The plugin adds a checkbox to the post type you'd like restricted. If the checkbox is checked, **POW**, that post is restricted --accessible only to logged-in users.
 
-Installation
-------------
+== Installation ==
 
 **Manual Installation**
 
@@ -20,8 +31,7 @@ Installation
   - Configure the plugin setting found under Settings->Super Simple Post / Page Restrictor
   - Edit the post / page you'd like to restrict. There should be a checkbox labeled "Restrict Post?" - check this to restrict the current post / page.
 
-Configuration
--------------
+== Configuration ==
 
 **Page unavailable text**
 
@@ -38,10 +48,18 @@ Configuration
   - User roles selected here will never be able to view restricted content
   - User roles selected here will **never** be able to see restricted content, regardless of whether they are logged in.
 
-Future Development
-------------------
+== Future Development ==
 
 I'd like to add the following features to the plugin. If you have suggestions for added features please email me at arippberger@gmail.com.
 
   - Add shortcode to restrict content - content placed between start/end shortcodes would be restricted
   - Resctrict content in RSS feeds 
+
+== Frequently Asked Questions ==
+
+  - Q - How can I suggest features?
+  - A - Email arippberger@gmail.com
+
+== Changelog ==
+
+  - 1.0 - Initial commit
