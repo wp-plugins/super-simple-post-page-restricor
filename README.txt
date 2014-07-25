@@ -1,4 +1,3 @@
-
 === Super Simple Post / Page Restrictor ===
 Contributors: arippberger, werkpress
 Tags: restrict content, restrictor, super simple, user login, login, restrict
