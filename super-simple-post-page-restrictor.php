@@ -3,7 +3,7 @@
 Plugin Name: Super Simple Post / Page Restrictor
 Plugin URI: https://github.com/arippberger/super-simple-post-page-restrictor
 Description: Adds a super simple post / page restriction option
-Version: 1.0
+Version: 1.1
 Author: arippberger
 Author URI: http://alecrippberger.com
 License: GPL2
@@ -92,10 +92,12 @@ if ( !class_exists( 'Super_Simple_Page_Post_Restrictor' ) ) {
 			$current_user_can_access = true;
 
 			//loop through current user roles and check if any roles are in restricted roles array
-			foreach ($current_user_roles as $key => $role) {
-				if ( in_array( $role, $restricted_roles) ) {
-					//restrict access
-					$current_user_can_access = false;
+			if ( is_array( $current_user_roles ) ) { //first check if is array (settings need to be set)
+				foreach ($current_user_roles as $key => $role) {
+					if ( is_array( $restricted_roles ) && in_array( $role, $restricted_roles) ) { //if restricted roles is set (is_array()) and current role is in restricted roles
+						//restrict access
+						$current_user_can_access = false;
+					}
 				}
 			}
 
