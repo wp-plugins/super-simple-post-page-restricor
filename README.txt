@@ -62,3 +62,4 @@ I'd like to add the following features to the plugin. If you have suggestions fo
 == Changelog ==
 
   - 1.0 - Initial commit
+  - 1.0.1 - Plugin cleanup and added translation support
